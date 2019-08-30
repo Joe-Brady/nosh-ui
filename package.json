@@ -10,7 +10,8 @@
     "test:unit": "",
     "docker:build": "docker build -t nosh-ui-nginx .",
     "docker:startlocal": "(docker stop nosh-ui-nginx-local && docker rm nosh-ui-nginx-local) || true && docker run --name nosh-ui-nginx-local -d -p 8080:80 nosh-ui-nginx",
-    "docker:build:startlocal": "npm run docker:build && npm run docker:startlocal"
+    "docker:build:startlocal": "npm run docker:build && npm run docker:startlocal",
+    "browserslist": "npx browserslist"
   },
   "author": "Joe Brady",
   "license": "MIT",
