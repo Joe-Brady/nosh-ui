@@ -1,9 +1,11 @@
 import React from "react";
+import Routes from "./Routes";
+import ThemeWrapper from "./ThemeWrapper";
 
 const App = () => (
-  <div>
-    <h1>Hello!</h1>
-  </div>
+  <ThemeWrapper>
+    <Routes />
+  </ThemeWrapper>
 );
 
 export default App;
