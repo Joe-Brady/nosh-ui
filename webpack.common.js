@@ -9,6 +9,9 @@ const webpackCommon = {
   output: {
     path: path.resolve(__dirname, "dist")
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
+  },
   devtool: "source-map",
   module: {
     rules: [

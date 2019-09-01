@@ -9,7 +9,11 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const ThemeWrapper = ({ children }) => (
+interface PropsInterface {
+  children: any;
+}
+
+const ThemeWrapper = ({ children }: PropsInterface) => (
   <>
     <GlobalStyles />
     {children}
