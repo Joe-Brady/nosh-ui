@@ -4,13 +4,21 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const webpackCommon = {
   entry: {
-    app: ["./src/index.js"]
+    app: ["./src/index.tsx"]
   },
   output: {
     path: path.resolve(__dirname, "dist")
   },
+  devtool: "source-map",
   module: {
-    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }]
+    rules: [
+      { test: /\.ts(x?)$/, exclude: /node_modules/, loader: "ts-loader" },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        loader: "source-map-loader"
+      }
+    ]
   },
   plugins: [
     new CopyWebpackPlugin([
