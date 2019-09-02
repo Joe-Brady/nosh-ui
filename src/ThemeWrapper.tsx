@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 interface PropsInterface {
-  children: any;
+  children: React.ReactNode;
 }
 
 const ThemeWrapper = ({ children }: PropsInterface) => (
