@@ -12,15 +12,9 @@ const webpackCommon = {
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
-  // devtool: "source-map",
   module: {
     rules: [
       { test: /\.ts(x?)$/, exclude: /node_modules/, loader: "babel-loader" }
-      // {
-      //   enforce: "pre",
-      //   test: /\.js$/,
-      //   loader: "source-map-loader"
-      // }
     ]
   },
   plugins: [

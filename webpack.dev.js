@@ -7,7 +7,6 @@ const webpackDev = merge(webpackCommon, {
     filename: "main.bundle.[hash].js",
     chunkFilename: "[name].chunk.[hash].js"
   },
-  devtool: "eval",
   devServer: {
     contentBase: "./dist",
     hot: true,
