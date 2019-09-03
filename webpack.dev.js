@@ -10,7 +10,8 @@ const webpackDev = merge(webpackCommon, {
   devServer: {
     contentBase: "./dist",
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    port: 3000
   }
 });
 

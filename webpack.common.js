@@ -20,7 +20,7 @@ const webpackCommon = {
   plugins: [
     new CopyWebpackPlugin([
       {
-        from: "./src/static",
+        from: "./static",
         to: "static"
       }
     ]),

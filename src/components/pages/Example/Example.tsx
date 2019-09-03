@@ -1,6 +1,6 @@
 import React from "react";
 
-const Example = () => (
+const Example: React.FunctionComponent = () => (
   <div>
     <h1>Example</h1>
   </div>
