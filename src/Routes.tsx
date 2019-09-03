@@ -15,7 +15,7 @@ import { Home, Example } from "./components/pages";
 //   loading: ComponentLoading
 // });
 
-const Routes = () => (
+const Routes: React.FunctionComponent = () => (
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/example" component={Example} />

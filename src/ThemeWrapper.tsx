@@ -20,10 +20,12 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 interface PropsInterface {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
-const ThemeWrapper = ({ children }: PropsInterface) => (
+const ThemeWrapper: React.FunctionComponent = ({
+  children
+}: PropsInterface) => (
   <>
     <GlobalStyles />
     {children}
