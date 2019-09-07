@@ -1,6 +1,16 @@
 module.exports = {
   verbose: true,
   collectCoverage: true,
+  collectCoverageFrom: [
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "!src/assets/**",
+    "!**/index.ts",
+    "!**/index.tsx",
+    "!**/App.tsx",
+    "!**/Routes.tsx",
+    "!**/theme.ts"
+  ],
   coverageThreshold: {
     global: {
       branches: 100,
