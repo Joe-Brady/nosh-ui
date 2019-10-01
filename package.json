@@ -9,9 +9,10 @@
     "test:typescript": "tsc --skipLibCheck",
     "test:unit": "jest ./src",
     "test:ci": "npm run test:lint && npm run test:format && npm run test:typescript && npm run test:unit",
-    "docker:build": "docker build -t nosh-ui-nginx .",
-    "docker:startlocal": "(docker stop nosh-ui-nginx-local && docker rm nosh-ui-nginx-local) || true && docker run --name nosh-ui-nginx-local -d -p 8080:80 nosh-ui-nginx && echo 'Running on http://localhost:8080'",
+    "docker:build": "docker build -t joebrady/nosh-ui .",
+    "docker:startlocal": "(docker stop nosh-ui-local && docker rm nosh-ui-local) || true && docker run --name nosh-ui-local -d -p 8080:80 joebrady/nosh-ui && echo 'Running on http://localhost:8080'",
     "docker:build:startlocal": "npm run docker:build && npm run docker:startlocal",
+    "docker:publish": "docker push joebrady/nosh-ui:latest",
     "browserslist": "npx browserslist"
   },
   "author": "Joe Brady",
